@@ -1,0 +1,63 @@
+$primary-colour: #444;
+$text-colour: #fff;
+$secondary-colour: #33aaee;
+
+body {
+  background-color: $primary-colour;
+  color: $text-colour;
+  font-family: Arial, Helvetica, sans-serif;
+
+  input,
+  select {
+    border-radius: 10px;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+  color: $secondary-colour;
+  margin: 25px;
+  padding: 0;
+  text-align: center;
+}
+
+#login {
+  border: 1px solid white;
+  justify-self: center;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+  grid-column: 2;
+
+  p,
+  input {
+    font-size: 1.5rem;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+
+  p {
+    margin-top: 25px;
+  }
+}
+
+#addItemForm {
+  grid-column: 2;
+  font-size: 1.2rem;
+  p,
+  input,
+  select {
+    width: calc(100% - 30px);
+  }
+
+  input {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
