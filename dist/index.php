@@ -8,18 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title" id="loginTitle">
-        <h1>Cost Splitter</h1>
-    </div>
     <div class="main">
-        <div id="login">
-            <form action="login.php" method="post">
-                <p>Username:</p>
-                <input type="text" name="username" id="username">
-                <p>password:</p>
-                <input type="text" name="password" id="password">
-                <input type="submit" value="Login">
-            </form>
+        <div id="mainNav">
+            <button><a href="recordPurchase.php">Record a purchase</a></button>
+            <button><a href="viewRecords.php">View records</a></button>
         </div>
     </div>
 </body>

@@ -3,8 +3,12 @@ body {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif; }
   body input,
-  body select {
+  body select,
+  body button {
     border-radius: 10px; }
+  body a {
+    text-decoration: none;
+    color: #000; }
 
 .main {
   display: grid;
@@ -16,29 +20,29 @@ body {
   padding: 0;
   text-align: center; }
 
-#login {
+#mainNav {
   border: 1px solid white;
   justify-self: center;
   height: auto;
   width: 100%;
   border-radius: 25px;
   grid-column: 2; }
-  #login p,
-  #login input {
+  #mainNav p,
+  #mainNav button {
     font-size: 1.5rem;
     margin: 15px;
     width: calc(100% - 30px); }
-  #login p {
+  #mainNav p {
     margin-top: 25px; }
 
-#addItemForm {
+#recordPurchaseForm {
   grid-column: 2;
   font-size: 1.2rem; }
-  #addItemForm p,
-  #addItemForm input,
-  #addItemForm select {
+  #recordPurchaseForm p,
+  #recordPurchaseForm input,
+  #recordPurchaseForm select {
     width: calc(100% - 30px); }
-  #addItemForm input {
+  #recordPurchaseForm input {
     margin: 0; }
-  #addItemForm p {
+  #recordPurchaseForm p {
     margin-bottom: 0; }

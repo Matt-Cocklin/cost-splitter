@@ -1,15 +1,22 @@
 $primary-colour: #444;
-$text-colour: #fff;
+$text-colour-light: #fff;
+$text-colour-dark: #000;
 $secondary-colour: #33aaee;
 
 body {
   background-color: $primary-colour;
-  color: $text-colour;
+  color: $text-colour-light;
   font-family: Arial, Helvetica, sans-serif;
 
   input,
-  select {
+  select,
+  button {
     border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-colour-dark;
   }
 }
 
@@ -25,7 +32,7 @@ body {
   text-align: center;
 }
 
-#login {
+#mainNav {
   border: 1px solid white;
   justify-self: center;
   height: auto;
@@ -34,7 +41,7 @@ body {
   grid-column: 2;
 
   p,
-  input {
+  button {
     font-size: 1.5rem;
     margin: 15px;
     width: calc(100% - 30px);
@@ -45,7 +52,7 @@ body {
   }
 }
 
-#addItemForm {
+#recordPurchaseForm {
   grid-column: 2;
   font-size: 1.2rem;
   p,

@@ -8,24 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title" id="loginTitle">
-        <h1>Add Item</h1>
+    <div class="title">
+        <h1>Record Purchase</h1>
     </div>
     <div class="main">
-        <form id="addItemForm" action="addItemDAO.php" method="post">
-            <p>Item name:</p>
+        <form id="recordPurchaseForm" action="recordPurchaseDAO.php" method="post" autocomplete="off">
+            <p>Item:</p>
             <input type="text" name="name" id="name">
-            <p>Item category:</p>
+            <p>Category:</p>
             <select name="category" id="category">
                 <option value="Food / drink">Food / drink</option>
                 <option value="Furniture">Furniture</option>
                 <option value="Equipment (kitchen utensils etc)">Equipment (kitchen utensils etc)</option>
                 <option value="Other">Other</option>
             </select>
-            <p>Item amount:</p>
-            <input type="text" name="amount" id="amount">
-            <p>Item price:</p>
+            <p>price:</p>
             <input type="text" name="price" id="price">
+            <p>Who paid?</p>
+            <select name="whoPaid" id=who_paid>
+                <option value="Matt">Matt</option>
+                <option value="Curt">Curt</option>
+                <option value="Joe">Joe</option>
+                <option value="Sam">Sam</option>
+                <option value="Tom">Tom</option>
+            </select>
             <br><br>
             <input type="submit" value="Add Item">
         </form>
